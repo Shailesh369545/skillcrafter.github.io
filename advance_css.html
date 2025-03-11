@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced CSS - SkillCrafters</title>
+    <link rel="stylesheet" href="advance_style.css">
+</head>
+<body>
+    <header>
+        <h1>Advanced CSS Techniques</h1>
+    </header>
+
+    <div class="container">
+        <nav class="sidebar">
+            <h2>CSS Topics</h2>
+            <ul>
+                <li><a href="css_home.html">Home</a></li>
+                <li><a href="intro_css.html">Introduction to CSS</a></li>
+                <li><a href="syntax_css.html">CSS Syntax</a></li>
+                <li><a href="selectors_css.html">CSS Selectors</a></li>
+                <li><a href="colors_css.html">CSS Colors</a></li>
+                <li><a href="backgrounds_css.html">CSS Backgrounds</a></li>
+                <li><a href="borders_css.html">CSS Borders</a></li>
+                <li><a href="margins_css.html">CSS Margins & Padding</a></li>
+                <li><a href="text_css.html">CSS Text Formatting</a></li>
+                <li><a href="fonts_css.html">CSS Fonts</a></li>
+                <li><a href="flexbox_css.html">CSS Flexbox</a></li>
+                <li><a href="grid_css.html">CSS Grid</a></li>
+                <li><a href="animations_css.html">CSS Animations</a></li>
+                <li><a href="transitions_css.html">CSS Transitions</a></li>
+                <li><a href="responsive_css.html">Responsive Design</a></li>
+                <li><a href="advanced_css.html" class="active">Advanced CSS</a></li>
+                <li><a href="quiz_css.html">CSS Quiz</a></li>
+            </ul>
+        </nav>
+
+        <main class="content">
+            <h2>Advanced CSS Techniques</h2>
+            <p>Advanced CSS helps create modern, visually appealing, and interactive web designs.</p>
+
+            <h3>1️⃣ CSS Variables</h3>
+            <p>CSS variables allow you to store values and reuse them throughout your stylesheet.</p>
+            <pre>
+                <code>
+:root {
+    --main-color: #007BFF;
+    --text-color: white;
+}
+
+body {
+    background-color: var(--main-color);
+    color: var(--text-color);
+}
+                </code>
+            </pre>
+
+            <h3>2️⃣ CSS Grid Advanced Layout</h3>
+            <p>CSS Grid provides a flexible and powerful way to structure complex layouts.</p>
+            <pre>
+                <code>
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+                </code>
+            </pre>
+
+            <h3>3️⃣ CSS Blend Modes</h3>
+            <p>Blend modes help create cool visual effects.</p>
+            <pre>
+                <code>
+.image {
+    background-image: url('image.jpg');
+    mix-blend-mode: multiply;
+}
+                </code>
+            </pre>
+
+            <h3>Live Demo</h3>
+            <div class="container">
+                <div class="box">Box 1</div>
+                <div class="box">Box 2</div>
+                <div class="box">Box 3</div>
+            </div>
+        </main>
+    </div>
+</body>
+</html>

@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PHP Tutorial - SkillCrafters</title>
+    <link rel="stylesheet" href="php_style.css">
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <h1>PHP Tutorial</h1>
+    </header>
+
+    <div class="container">
+
+        <!-- Sidebar -->
+        <nav class="sidebar">
+            <h2>PHP Topics</h2>
+            <ul>
+                <li><a href="#intro">Introduction</a></li>
+                <li><a href="#syntax">PHP Syntax</a></li>
+                <li><a href="#variables">PHP Variables</a></li>
+                <li><a href="#datatypes">Data Types</a></li>
+                <li><a href="#operators">Operators</a></li>
+                <li><a href="#loops">Loops</a></li>
+                <li><a href="#functions">Functions</a></li>
+                <li><a href="#forms">Handling Forms</a></li>
+                <li><a href="#database">Database Connection</a></li>
+            </ul>
+        </nav>
+
+        <!-- Main Content -->
+        <div class="content">
+
+            <section id="intro">
+                <h2>Introduction to PHP</h2>
+                <p>PHP is a server-side scripting language designed for web development but also used as a general-purpose language.</p>
+                <pre><code>&lt;?php echo "Hello, World!"; ?&gt;</code></pre>
+            </section>
+
+            <section id="syntax">
+                <h2>PHP Syntax</h2>
+                <p>PHP scripts are executed on the server and have a special syntax.</p>
+                <pre><code>&lt;?php
+// This is a comment
+echo "PHP Syntax Example";
+?&gt;</code></pre>
+            </section>
+
+            <section id="variables">
+                <h2>PHP Variables</h2>
+                <p>Variables in PHP start with a `$` sign.</p>
+                <pre><code>&lt;?php
+$name = "SkillCrafters";
+echo "Welcome to " . $name;
+?&gt;</code></pre>
+            </section>
+
+            <section id="datatypes">
+                <h2>PHP Data Types</h2>
+                <p>PHP supports various data types like integers, floats, strings, arrays, etc.</p>
+                <pre><code>&lt;?php
+$intVar = 100;
+$floatVar = 10.5;
+$stringVar = "Hello";
+?&gt;</code></pre>
+            </section>
+
+            <section id="operators">
+                <h2>PHP Operators</h2>
+                <p>Operators are used to perform operations on variables and values.</p>
+                <pre><code>&lt;?php
+$a = 10;
+$b = 5;
+echo $a + $b; // Output: 15
+?&gt;</code></pre>
+            </section>
+
+            <section id="loops">
+                <h2>PHP Loops</h2>
+                <p>Loops in PHP help to execute a block of code multiple times.</p>
+                <pre><code>&lt;?php
+for ($i = 1; $i <= 5; $i++) {
+    echo "Number: $i &lt;br&gt;";
+}
+?&gt;</code></pre>
+            </section>
+
+            <section id="functions">
+                <h2>PHP Functions</h2>
+                <p>Functions are reusable blocks of code.</p>
+                <pre><code>&lt;?php
+function greet($name) {
+    return "Hello, " . $name;
+}
+echo greet("SkillCrafters");
+?&gt;</code></pre>
+            </section>
+
+            <section id="forms">
+                <h2>Handling Forms in PHP</h2>
+                <p>Forms allow user interaction with the server.</p>
+                <pre><code>&lt;form method="post">
+    Name: &lt;input type="text" name="name">
+    &lt;input type="submit">
+&lt;/form>
+
+&lt;?php
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    echo "Hello, " . $_POST['name'];
+}
+?&gt;</code></pre>
+            </section>
+
+            <section id="database">
+                <h2>PHP Database Connection</h2>
+                <p>PHP connects to databases using MySQLi or PDO.</p>
+                <pre><code>&lt;?php
+$conn = new mysqli("localhost", "root", "", "test_db");
+if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error);
+}
+echo "Connected successfully";
+?&gt;</code></pre>
+            </section>
+
+        </div>
+    </div>
+
+</body>
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Quiz - SkillCrafters</title>
+    <link rel="stylesheet" href="javascript_quiz_style.css">
+</head>
+<body>
+
+    <header>
+        <h1>JavaScript Quiz</h1>
+    </header>
+
+    <div class="container">
+        <form id="quizForm">
+            <div class="question">
+                <h3>1. What is the correct way to declare a JavaScript variable?</h3>
+                <label><input type="radio" name="q1" value="a"> var myVar;</label>
+                <label><input type="radio" name="q1" value="b"> variable myVar;</label>
+                <label><input type="radio" name="q1" value="c"> let = myVar;</label>
+            </div>
+
+            <div class="question">
+                <h3>2. How do you write a function in JavaScript?</h3>
+                <label><input type="radio" name="q2" value="a"> function:myFunction()</label>
+                <label><input type="radio" name="q2" value="b"> function myFunction() { }</label>
+                <label><input type="radio" name="q2" value="c"> func myFunction() { }</label>
+            </div>
+
+            <div class="question">
+                <h3>3. How can you add a comment in JavaScript?</h3>
+                <label><input type="radio" name="q3" value="a"> // This is a comment</label>
+                <label><input type="radio" name="q3" value="b"> &lt;!-- This is a comment --&gt;</label>
+                <label><input type="radio" name="q3" value="c"> ** This is a comment **</label>
+            </div>
+
+            <div class="question">
+                <h3>4. What is the output of `console.log(typeof [])`?</h3>
+                <label><input type="radio" name="q4" value="a"> object</label>
+                <label><input type="radio" name="q4" value="b"> array</label>
+                <label><input type="radio" name="q4" value="c"> undefined</label>
+            </div>
+
+            <div class="question">
+                <h3>5. Which method is used to remove the last element from an array?</h3>
+                <label><input type="radio" name="q5" value="a"> pop()</label>
+                <label><input type="radio" name="q5" value="b"> removeLast()</label>
+                <label><input type="radio" name="q5" value="c"> shift()</label>
+            </div>
+
+            <!-- Add 10 more questions similarly -->
+
+            <button type="button" onclick="calculateScore()">Submit Quiz</button>
+        </form>
+
+        <div id="result"></div>
+    </div>
+
+    <script>
+        function calculateScore() {
+            let answers = {
+                q1: "a",
+                q2: "b",
+                q3: "a",
+                q4: "a",
+                q5: "a"
+                // Add answers for remaining 10 questions
+            };
+
+            let score = 0;
+            let totalQuestions = Object.keys(answers).length;
+
+            for (let key in answers) {
+                let selectedAnswer = document.querySelector(`input[name="${key}"]:checked`);
+                if (selectedAnswer && selectedAnswer.value === answers[key]) {
+                    score++;
+                }
+            }
+
+            document.getElementById("result").innerHTML = `<h2>Your Score: ${score} / ${totalQuestions}</h2>`;
+        }
+    </script>
+
+</body>
+</html>

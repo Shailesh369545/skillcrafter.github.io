@@ -1,0 +1,59 @@
+body {
+    font-family: 'Poppins', sans-serif;
+}
+/* Back to Home Button */
+.back-home-btn {
+    background: linear-gradient(135deg, #ff7e5f, #feb47b);
+    color: white;
+    padding: 10px 15px;
+    font-size: 14px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+    text-decoration: none;
+}
+
+.back-home-btn:hover {
+    background: linear-gradient(135deg, #feb47b, #ff7e5f);
+    text-decoration: none;
+}
+
+.contact-section {
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-card {
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.contact-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.submit-btn {
+    background: linear-gradient(135deg, #ff7e5f, #feb47b);
+    color: white;
+    padding: 12px;
+    font-size: 16px;
+    font-weight: bold;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out;
+}
+
+.submit-btn:hover {
+    background: linear-gradient(135deg, #feb47b, #ff7e5f);
+}
+
+@media (max-width: 768px) {
+    .contact-card {
+        padding: 30px;
+    }
+}

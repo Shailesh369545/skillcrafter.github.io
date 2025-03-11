@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML5 Features - SkillCrafters</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="html5_style.css"> <!-- HTML5 styles -->
+</head>
+<body>
+
+    <!-- Sidebar -->
+    <nav class="sidebar">
+        <a href="index.html" class="back-btn">Back To Home</a>
+        <h2>HTML Topics</h2>
+        <ul>
+            <li><a href="intro.html">Introduction to HTML</a></li>
+            <li><a href="basics.html">HTML Basics</a></li>
+            <li><a href="text.html">Text Formatting</a></li>
+            <li><a href="links.html">Links & Images</a></li>
+            <li><a href="table.html">Tables</a></li>
+            <li><a href="forms.html">Forms & Inputs</a></li>
+            <li><a href="html5.html" class="active">HTML5 Features</a></li>
+            <li><a href="quiz.html">HTML Quiz</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="content">
+        <header>
+            <h1>HTML5 Features</h1>
+            <h2>SkillCrafters</h2>
+        </header>
+
+        <!-- Introduction -->
+        <section>
+            <h2>What is HTML5?</h2>
+            <p>HTML5 is the latest version of HyperText Markup Language, designed to improve functionality, support multimedia, and enhance user experience on the web.</p>
+        </section>
+
+        <!-- New Semantic Elements -->
+        <section>
+            <h2>New Semantic Elements</h2>
+            <p>HTML5 introduced several new semantic elements to define different sections of a webpage:</p>
+            <div class="code-box">
+                <pre>
+&lt;header&gt; - Defines a header section
+&lt;nav&gt; - Defines navigation links
+&lt;section&gt; - Defines a section in the document
+&lt;article&gt; - Defines an article or independent content
+&lt;aside&gt; - Defines content aside from the main content
+&lt;footer&gt; - Defines a footer section
+                </pre>
+            </div>
+        </section>
+
+        <!-- Example Usage -->
+        <section>
+            <h2>Example Usage</h2>
+            <div class="code-box">
+                <pre>
+&lt;header&gt;
+    &lt;h1&gt;Welcome to My Website&lt;/h1&gt;
+&lt;/header&gt;
+
+&lt;nav&gt;
+    &lt;a href="#"&gt;Home&lt;/a&gt; | &lt;a href="#"&gt;About&lt;/a&gt; | &lt;a href="#"&gt;Contact&lt;/a&gt;
+&lt;/nav&gt;
+
+&lt;section&gt;
+    &lt;h2&gt;Main Section&lt;/h2&gt;
+    &lt;p&gt;This is a section of content.&lt;/p&gt;
+&lt;/section&gt;
+
+&lt;footer&gt;
+    &lt;p&gt;Copyright 2025&lt;/p&gt;
+&lt;/footer&gt;
+                </pre>
+            </div>
+        </section>
+
+        <!-- New Input Types -->
+        <section>
+            <h2>New Form Input Types</h2>
+            <p>HTML5 introduced new input types for better form validation and user experience:</p>
+            <div class="code-box">
+                <pre>
+&lt;input type="email"&gt; - For email input
+&lt;input type="tel"&gt; - For telephone numbers
+&lt;input type="url"&gt; - For URLs
+&lt;input type="date"&gt; - For date selection
+&lt;input type="range"&gt; - For range sliders
+&lt;input type="color"&gt; - For color picker
+                </pre>
+            </div>
+        </section>
+
+        <!-- Example -->
+        <section>
+            <h2>Example Form</h2>
+            <div class="output-box">
+                <form>
+                    <label>Email: <input type="email" placeholder="Enter your email"></label><br><br>
+                    <label>Phone: <input type="tel" placeholder="Enter your phone"></label><br><br>
+                    <label>Date of Birth: <input type="date"></label><br><br>
+                    <label>Choose Color: <input type="color"></label><br><br>
+                    <label>Set Range: <input type="range" min="0" max="100"></label><br><br>
+                    <button type="submit">Submit</button>
+                </form>
+            </div>
+        </section>
+
+    </div>
+
+</body>
+</html>

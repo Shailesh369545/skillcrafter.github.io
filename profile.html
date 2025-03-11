@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile - SkillCrafters</title>
+    <link rel="stylesheet" href="profile_style.css">
+</head>
+<body>
+    <script src="script.js"></script
+    <header>
+        <h1>SkillCrafters</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="learn.html">Learn</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="profile.html">Profile</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="profile">
+        <h2>Student Dashboard</h2>
+        <p>Name: John Doe</p>
+        <p>Enrolled Courses: HTML, CSS, JavaScript</p>
+        <p>Certificates Earned:</p>
+        <ul>
+            <li><a href="certificates/html_certificate.pdf" download>HTML Certificate</a></li>
+            <li><a href="certificates/css_certificate.pdf" download>CSS Certificate</a></li>
+        </ul>
+    </section>
+
+</body>
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        let sections = document.querySelectorAll(".section");
+        
+        function revealSections() {
+            sections.forEach(section => {
+                let sectionTop = section.getBoundingClientRect().top;
+                let windowHeight = window.innerHeight;
+    
+                if (sectionTop < windowHeight - 100) {
+                    section.classList.add("show");
+                }
+            });
+        }
+    
+        window.addEventListener("scroll", revealSections);
+        revealSections(); // Run once to check initial view
+    });
+    </script>
+    
+</html>

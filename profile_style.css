@@ -1,0 +1,159 @@
+/* ===== General Styling ===== */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* ===== Header Styling ===== */
+header {
+    background: #00adb5;
+    padding: 20px;
+    text-align: center;
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    animation: fadeInDown 1s ease-in-out;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0 0;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: rgb(27, 25, 24);
+    scroll-behavior: smooth;
+    font-size: 1.2rem;
+    padding: 10px 15px;
+    border-radius: 10px;
+    background-color: rgb(165, 132, 132);
+    transition: background 0.5s, transform 0.3s;
+    backface-visibility: visible;
+    box-shadow: firebrick;
+}
+
+nav ul li a:hover {
+    background: rgba(156, 11, 11, 0.2);
+    transform: scale(1.1);
+    box-shadow: 0 8px 20px rgba(0, 173, 181, 0.3);
+}
+
+/* ===== Profile Section Styling ===== */
+.profile {
+    max-width: 700px;
+    margin: 50px auto;
+    padding: 30px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.profile h2 {
+    font-size: 2rem;
+    color: #1a1a2e;
+    margin-bottom: 15px;
+    animation: zoomIn 1s ease-in-out;
+}
+
+.profile p {
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 15px;
+    animation: slideUp 1s ease-in-out;
+}
+
+/* ===== Certificates Section ===== */
+.profile ul {
+    list-style: none;
+    padding: 0;
+}
+
+.profile ul li {
+    margin: 10px 0;
+}
+
+.profile ul li a {
+    text-decoration: none;
+    color: #00adb5;
+    font-size: 1.2rem;
+    font-weight: bold;
+    transition: color 0.3s, transform 0.3s;
+}
+
+.profile ul li a:hover {
+    color: #007f80;
+    transform: scale(1.1);
+}
+
+/* ===== Responsive Design ===== */
+@media (max-width: 600px) {
+    .profile {
+        width: 90%;
+        padding: 20px;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+/* ===== Animations ===== */
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes zoomIn {
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes slideUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}

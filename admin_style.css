@@ -1,0 +1,11 @@
+/* style7.css */
+.list-group-item {
+    background: white;
+    border-radius: 5px;
+    margin-bottom: 5px;
+}
+
+.table {
+    background: white;
+    border-radius: 10px;
+}

@@ -1,0 +1,92 @@
+/* Sidebar Styling */
+.sidebar {
+    width: 250px;
+    height: 100vh;
+    background-color: #1a1a1a;
+    color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 20px;
+    overflow-y: auto;
+}
+
+/* Back Button */
+.back-btn {
+    display: block;
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    text-align: center;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.back-btn:hover {
+    background-color: #555;
+}
+
+/* Sidebar Title */
+.sidebar h2 {
+    font-size: 18px;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+    border-bottom: 2px solid #444;
+    padding-bottom: 5px;
+}
+
+/* Sidebar Links */
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidebar ul li {
+    margin: 10px 0;
+}
+
+.sidebar ul li a {
+    display: block;
+    background-color: #252525;
+    color: white;
+    padding: 10px;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 14px;
+    transition: 0.3s ease;
+}
+
+/* Shadow Effect on Click */
+.sidebar ul li a:active {
+    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.8);
+}
+
+/* Active Link */
+.sidebar ul li a.active {
+    background-color: #444;
+    font-weight: bold;
+}
+
+/* Sidebar Hover Effect */
+.sidebar ul li a:hover {
+    background-color: #444;
+}
+
+/* Main Content */
+.content {
+    margin-left: 270px;
+    padding: 20px;
+}
+
+/* Code Block */
+.code-block {
+    background-color: #222;
+    color: #00ff00;
+    padding: 15px;
+    border-radius: 5px;
+    font-family: monospace;
+    overflow-x: auto;
+}

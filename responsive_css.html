@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Responsive Design - SkillCrafters</title>
+    <link rel="stylesheet" href="responsive_style.css">
+</head>
+<body>
+    <header>
+        <h1>CSS Responsive Design</h1>
+    </header>
+
+    <div class="container">
+        <nav class="sidebar">
+            <h2>CSS Topics</h2>
+            <ul>
+                <li><a href="css_home.html">Home</a></li>
+                <li><a href="intro_css.html">Introduction to CSS</a></li>
+                <li><a href="syntax_css.html">CSS Syntax</a></li>
+                <li><a href="selectors_css.html">CSS Selectors</a></li>
+                <li><a href="colors_css.html">CSS Colors</a></li>
+                <li><a href="backgrounds_css.html">CSS Backgrounds</a></li>
+                <li><a href="borders_css.html">CSS Borders</a></li>
+                <li><a href="margins_css.html">CSS Margins & Padding</a></li>
+                <li><a href="text_css.html">CSS Text Formatting</a></li>
+                <li><a href="fonts_css.html">CSS Fonts</a></li>
+                <li><a href="flexbox_css.html">CSS Flexbox</a></li>
+                <li><a href="grid_css.html">CSS Grid</a></li>
+                <li><a href="animations_css.html">CSS Animations</a></li>
+                <li><a href="transitions_css.html">CSS Transitions</a></li>
+                <li><a href="responsive_css.html" class="active">Responsive Design</a></li>
+                <li><a href="advanced_css.html">Advanced CSS</a></li>
+            </ul>
+        </nav>
+
+        <main class="content">
+            <h2>CSS Responsive Design</h2>
+            <p>Responsive Design ensures that web pages look good on all devices (desktops, tablets, and phones).</p>
+
+            <h3>Key Concepts in Responsive Design</h3>
+            <ul>
+                <li><code>Media Queries</code> - Apply styles based on screen size.</li>
+                <li><code>Flexible Grid</code> - Use percentage widths instead of fixed units.</li>
+                <li><code>Fluid Images</code> - Images should resize based on screen width.</li>
+            </ul>
+
+            <h3>Example: Responsive Layout</h3>
+            <pre>
+                <code>
+.container {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.box {
+    width: 30%;
+    margin: 1%;
+    padding: 20px;
+    background-color: #007BFF;
+    color: white;
+    text-align: center;
+    border-radius: 10px;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    .box {
+        width: 45%;
+    }
+}
+
+@media (max-width: 480px) {
+    .box {
+        width: 100%;
+    }
+}
+                </code>
+            </pre>
+
+            <h3>Live Demo</h3>
+            <div class="container">
+                <div class="box">Box 1</div>
+                <div class="box">Box 2</div>
+                <div class="box">Box 3</div>
+            </div>
+        </main>
+    </div>
+</body>
+</html>

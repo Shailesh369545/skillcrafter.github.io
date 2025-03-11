@@ -1,0 +1,76 @@
+/* Sidebar Active State */
+.sidebar .active {
+    background-color: #3498db;
+    color: white;
+}
+
+/* Text Formatting Output Styles */
+.output-box {
+    background-color: white;
+    padding: 15px;
+    border-radius: 5px;
+    margin-top: 10px;
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Code Box Style */
+.code-box {
+    background-color: #1e1e1e;
+    color: #0f0;
+    padding: 10px;
+    border-radius: 5px;
+    font-family: monospace;
+    overflow-x: auto;
+}
+
+/* Styling for Text Formatting */
+.output-box p {
+    font-size: 18px;
+    margin: 5px 0;
+}
+
+.output-box b {
+    font-weight: bold;
+}
+
+.output-box i {
+    font-style: italic;
+}
+
+.output-box u {
+    text-decoration: underline;
+}
+
+.output-box mark {
+    background-color: yellow;
+}
+
+.output-box small {
+    font-size: 12px;
+}
+
+.output-box del {
+    text-decoration: line-through;
+}
+
+.output-box ins {
+    text-decoration: underline;
+    color: green;
+}
+
+.output-box sub {
+    font-size: 14px;
+    vertical-align: sub;
+}
+
+.output-box sup {
+    font-size: 14px;
+    vertical-align: super;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .output-box p {
+        font-size: 16px;
+    }
+}

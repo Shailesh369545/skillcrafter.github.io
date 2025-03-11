@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Backgrounds - SkillCrafters</title>
+    <link rel="stylesheet" href="backgrounds_style.css">
+</head>
+<body>
+    <header>
+        <h1>CSS Backgrounds</h1>
+    </header>
+
+    <div class="container">
+        <nav class="sidebar">
+            <h2>CSS Topics</h2>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="intro_css.html">Introduction to CSS</a></li>
+                <li><a href="syntax_css.html">CSS Syntax</a></li>
+                <li><a href="selectors_css.html">CSS Selectors</a></li>
+                <li><a href="colors_css.html">CSS Colors</a></li>
+                <li><a href="backgrounds_css.html">CSS Backgrounds</a></li>
+                <li><a href="borders_css.html">CSS Borders</a></li>
+                <li><a href="margins_css.html">CSS Margins & Padding</a></li>
+                <li><a href="text_css.html">CSS Text Styling</a></li>
+                <li><a href="fonts_css.html">CSS Fonts</a></li>
+                <li><a href="boxmodel_css.html">CSS Box Model</a></li>
+                <li><a href="flexbox_css.html">CSS Flexbox</a></li>
+                <li><a href="grid_css.html">CSS Grid</a></li>
+                <li><a href="animations_css.html">CSS Animations & Transitions</a></li>
+                <li><a href="responsive_css.html">Responsive Web Design</a></li>
+                <li><a href="quiz_css.html">CSS Quiz</a></li>
+            </ul>
+        </nav>
+
+        <main class="content">
+            <h2>CSS Backgrounds</h2>
+            <p>CSS backgrounds allow you to apply colors, images, and gradients to elements.</p>
+
+            <h3>1. Background Color</h3>
+            <p>Apply a solid background color using the background-color property.</p>
+            <pre>
+                <code>
+body {
+    background-color: lightblue;
+}
+                </code>
+            </pre>
+
+            <h3>2. Background Image</h3>
+            <p>Set an image as the background.</p>
+            <pre>
+                <code>
+body {
+    background-image: url('background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+                </code>
+            </pre>
+
+            <h3>3. Background Repeat</h3>
+            <p>Control how the background image repeats.</p>
+            <pre>
+                <code>
+body {
+    background-image: url('pattern.png');
+    background-repeat: repeat-x; /* Repeat only horizontally */
+}
+                </code>
+            </pre>
+
+            <h3>4. Background Position</h3>
+            <p>Adjust the position of the background image.</p>
+            <pre>
+                <code>
+body {
+    background-image: url('background.jpg');
+    background-position: center top;
+}
+                </code>
+            </pre>
+
+            <h3>5. Background Attachment</h3>
+            <p>Fix the background while scrolling.</p>
+            <pre>
+                <code>
+body {
+    background-image: url('background.jpg');
+    background-attachment: fixed;
+}
+                </code>
+            </pre>
+
+            <h3>6. Background Gradient</h3>
+            <p>Create a gradient background.</p>
+            <pre>
+                <code>
+body {
+    background: linear-gradient(to right, red, yellow);
+}
+                </code>
+            </pre>
+        </main>
+    </div>
+</body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Learn - SkillCrafters</title>
+    <link rel="stylesheet" href="learn_style.css">
+</head>
+<body>
+    <script src="script.js"></script>
+    <header>
+        <h1>SkillCrafters</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="learn.html">Learn</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="profile.html">Profile</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="courses">
+        <h2>Web Development Course</h2>
+        
+        <div class="course">
+            <h3>HTML Basics</h3>
+            <a href="home.html">Tutorial</a> |
+            <a href="https://youtu.be/HcOc7P5BMi4?feature=shared">Watch Video</a> |
+            <a href="quiz.html">Take Test</a>
+        </div>
+
+        <div class="course">
+            <h3>CSS Fundamentals</h3>
+            <a href="css_home.html">Tutorial</a> |
+            <a href="https://youtu.be/ESnrn1kAD4E?feature=shared">Watch Video</a> |
+            <a href="quiz_css.html">Take Test</a>
+        </div>
+
+        <div class="course">
+            <h3>JavaScript Essentials</h3>
+            <a href="javascript_home.html">Tutorial</a> |
+            <a href="https://youtu.be/VlPiVmYuoqw?feature=shared">Watch Video</a> |
+            <a href="javascript_quiz.html">Take Test</a>
+        </div>
+    </section>
+
+</body>
+<script>
+    document.addEventListener("DOMContentLoaded", function() {
+        let sections = document.querySelectorAll(".section");
+        
+        function revealSections() {
+            sections.forEach(section => {
+                let sectionTop = section.getBoundingClientRect().top;
+                let windowHeight = window.innerHeight;
+    
+                if (sectionTop < windowHeight - 100) {
+                    section.classList.add("show");
+                }
+            });
+        }
+    
+        window.addEventListener("scroll", revealSections);
+        revealSections(); // Run once to check initial view
+    });
+    </script>
+    
+</html>

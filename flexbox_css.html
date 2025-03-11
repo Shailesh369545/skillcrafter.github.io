@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Flexbox - SkillCrafters</title>
+    <link rel="stylesheet" href="flexbox_style.css">
+</head>
+<body>
+    <header>
+        <h1>CSS Flexbox</h1>
+    </header>
+
+    <div class="container">
+        <nav class="sidebar">
+            <h2>CSS Topics</h2>
+            <ul>
+                <li><a href="css_home.html">Home</a></li>
+                <li><a href="intro_css.html">Introduction to CSS</a></li>
+                <li><a href="syntax_css.html">CSS Syntax</a></li>
+                <li><a href="selectors_css.html">CSS Selectors</a></li>
+                <li><a href="colors_css.html">CSS Colors</a></li>
+                <li><a href="backgrounds_css.html">CSS Backgrounds</a></li>
+                <li><a href="borders_css.html">CSS Borders</a></li>
+                <li><a href="margins_css.html">CSS Margins & Padding</a></li>
+                <li><a href="text_css.html">CSS Text Formatting</a></li>
+                <li><a href="fonts_css.html">CSS Fonts</a></li>
+                <li><a href="flexbox_css.html" class="active">CSS Flexbox</a></li>
+                <li><a href="grid_css.html">CSS Grid</a></li>
+                <li><a href="animations_css.html">CSS Animations</a></li>
+                <li><a href="transitions_css.html">CSS Transitions</a></li>
+                <li><a href="responsive_css.html">Responsive Design</a></li>
+                <li><a href="advanced_css.html">Advanced CSS</a></li>
+            </ul>
+        </nav>
+
+        <main class="content">
+            <h2>CSS Flexbox</h2>
+            <p>The CSS Flexbox Layout module allows for easy alignment, distribution, and responsiveness of elements.</p>
+
+            <h3>Flexbox Properties</h3>
+            <ul>
+                <li><code>display: flex;</code> - Enables flexbox</li>
+                <li><code>justify-content</code> - Aligns items along the main axis</li>
+                <li><code>align-items</code> - Aligns items along the cross axis</li>
+                <li><code>flex-direction</code> - Defines row or column layout</li>
+                <li><code>flex-wrap</code> - Controls wrapping behavior</li>
+            </ul>
+
+            <h3>Example Code</h3>
+            <pre>
+                <code>
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.box {
+    width: 100px;
+    height: 100px;
+    background-color: #007BFF;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    border-radius: 5px;
+}
+                </code>
+            </pre>
+        </main>
+    </div>
+</body>
+</html>

@@ -1,0 +1,127 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+/* Header */
+header {
+    background: #00adb5;
+    padding: 20px;
+    text-align: center;
+    color: white;
+    font-size: 1.5rem;
+}
+
+/* Sidebar */
+.sidebar {
+    width: 250px;
+    background-color: #222;
+    color: white;
+    padding: 20px;
+    height: 100vh;
+    overflow-y: auto;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+}
+
+.sidebar h2 {
+    text-align: center;
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.sidebar ul li {
+    display: block;
+}
+
+.sidebar ul li a {
+    display: block;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    border-radius: 5px;
+    transition: background 0.3s;
+    margin-bottom: 5px;
+}
+
+.sidebar ul li a.active {
+    background-color: #00adb5;
+}
+
+.sidebar ul li a:hover {
+    background-color: #007BFF;
+}
+
+/* Main Content */
+.content {
+    flex: 1;
+    padding: 20px;
+    background-color: white;
+    border-left: 1px solid #ccc;
+    margin-left: 250px;
+}
+
+/* Quiz Questions */
+.quiz-question {
+    background: #fff;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.quiz-question p {
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+.quiz-question label {
+    display: block;
+    margin: 5px 0;
+    padding: 8px;
+    background: #f4f4f4;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.quiz-question label:hover {
+    background: #ddd;
+}
+
+/* Submit Button */
+button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #00adb5;
+    color: white;
+    border: none;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background-color: #007BFF;
+}
+
+/* Result Display */
+#result {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #00adb5;
+    margin-top: 15px;
+}

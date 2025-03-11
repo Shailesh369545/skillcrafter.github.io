@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Tables - SkillCrafters</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="tables_style.css"> <!-- Table-specific styles -->
+</head>
+<body>
+
+    <!-- Sidebar -->
+    <nav class="sidebar">
+        <a href="index.html" class="back-btn">Back To Home</a>
+        <h2>HTML Topics</h2>
+        <ul>
+            <li><a href="intro.html">Introduction to HTML</a></li>
+            <li><a href="basics.html">HTML Basics</a></li>
+            <li><a href="text.html">Text Formatting</a></li>
+            <li><a href="links.html">Links & Images</a></li>
+            <li><a href="table.html" class="active">Tables</a></li>
+            <li><a href="forms.html">Forms & Inputs</a></li>
+            <li><a href="html5.html">HTML5 Features</a></li>
+            <li><a href="quiz.html">HTML Quiz</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="content">
+        <header>
+            <h1>HTML Tables</h1>
+            <h2>SkillCrafters</h2>
+        </header>
+
+        <!-- Introduction -->
+        <section>
+            <h2>What is an HTML Table?</h2>
+            <p>An HTML table is used to organize data into rows and columns.</p>
+        </section>
+
+        <!-- Basic Table Example -->
+        <section>
+            <h2>Basic Table Structure</h2>
+            <p>Here is a simple HTML table:</p>
+            <div class="code-box">
+                <pre>
+&lt;table&gt;
+    &lt;tr&gt;
+        &lt;th&gt;Name&lt;/th&gt;
+        &lt;th&gt;Age&lt;/th&gt;
+        &lt;th&gt;Country&lt;/th&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;John&lt;/td&gt;
+        &lt;td&gt;25&lt;/td&gt;
+        &lt;td&gt;USA&lt;/td&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;Maria&lt;/td&gt;
+        &lt;td&gt;30&lt;/td&gt;
+        &lt;td&gt;Canada&lt;/td&gt;
+    &lt;/tr&gt;
+&lt;/table&gt;
+                </pre>
+            </div>
+        </section>
+
+        <!-- Styled Table Example -->
+        <section>
+            <h2>Styled Table Example</h2>
+            <table class="styled-table">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Age</th>
+                        <th>Country</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>John</td>
+                        <td>25</td>
+                        <td>USA</td>
+                    </tr>
+                    <tr>
+                        <td>Maria</td>
+                        <td>30</td>
+                        <td>Canada</td>
+                    </tr>
+                    <tr>
+                        <td>Ali</td>
+                        <td>28</td>
+                        <td>India</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- Colspan and Rowspan Example -->
+        <section>
+            <h2>Colspan & Rowspan Example</h2>
+            <table class="styled-table">
+                <tr>
+                    <th>Name</th>
+                    <th colspan="2">Details</th>
+                </tr>
+                <tr>
+                    <td>John</td>
+                    <td>25</td>
+                    <td>USA</td>
+                </tr>
+                <tr>
+                    <td rowspan="2">Maria</td>
+                    <td>30</td>
+                    <td>Canada</td>
+                </tr>
+                <tr>
+                    <td>Manager</td>
+                    <td>Company XYZ</td>
+                </tr>
+            </table>
+        </section>
+
+    </div>
+
+</body>
+</html>

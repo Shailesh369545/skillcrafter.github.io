@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Margins & Padding - SkillCrafters</title>
+    <link rel="stylesheet" href="margins_style.css">
+</head>
+<body>
+    <header>
+        <h1>CSS Margins & Padding</h1>
+    </header>
+
+    <div class="container">
+        <nav class="sidebar">
+            <h2>CSS Topics</h2>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="intro_css.html">Introduction to CSS</a></li>
+                <li><a href="syntax_css.html">CSS Syntax</a></li>
+                <li><a href="selectors_css.html">CSS Selectors</a></li>
+                <li><a href="colors_css.html">CSS Colors</a></li>
+                <li><a href="backgrounds_css.html">CSS Backgrounds</a></li>
+                <li><a href="borders_css.html">CSS Borders</a></li>
+                <li><a href="margins_css.html">CSS Margins & Padding</a></li>
+                <li><a href="text_css.html">CSS Text Styling</a></li>
+                <li><a href="fonts_css.html">CSS Fonts</a></li>
+                <li><a href="boxmodel_css.html">CSS Box Model</a></li>
+                <li><a href="flexbox_css.html">CSS Flexbox</a></li>
+                <li><a href="grid_css.html">CSS Grid</a></li>
+                <li><a href="animations_css.html">CSS Animations & Transitions</a></li>
+                <li><a href="responsive_css.html">Responsive Web Design</a></li>
+                <li><a href="quiz_css.html">CSS Quiz</a></li>
+            </ul>
+        </nav>
+
+        <main class="content">
+            <h2>CSS Margins & Padding</h2>
+            <p>Margins and padding control the space around and inside an element.</p>
+
+            <h3>1. Margin</h3>
+            <p>Margins define space *outside* the element.</p>
+            <pre>
+                <code>
+.margin-box {
+    margin: 20px;
+    border: 2px solid blue;
+    padding: 10px;
+}
+                </code>
+            </pre>
+            <div class="margin-box">This box has a margin.</div>
+
+            <h3>2. Padding</h3>
+            <p>Padding defines space *inside* the element.</p>
+            <pre>
+                <code>
+.padding-box {
+    padding: 20px;
+    border: 2px solid red;
+}
+                </code>
+            </pre>
+            <div class="padding-box">This box has padding.</div>
+
+            <h3>3. Individual Margins & Padding</h3>
+            <p>You can set values separately for top, right, bottom, and left.</p>
+            <pre>
+                <code>
+.custom-margin {
+    margin: 10px 20px 30px 40px;
+    border: 2px solid green;
+}
+
+.custom-padding {
+    padding: 5px 10px 15px 20px;
+    border: 2px solid purple;
+}
+                </code>
+            </pre>
+            <div class="custom-margin">Custom margin</div>
+            <div class="custom-padding">Custom padding</div>
+        </main>
+    </div>
+</body>
+</html>

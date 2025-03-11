@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Animations - SkillCrafters</title>
+    <link rel="stylesheet" href="animations_style.css">
+</head>
+<body>
+    <header>
+        <h1>CSS Animations</h1>
+    </header>
+
+    <div class="container">
+        <nav class="sidebar">
+            <h2>CSS Topics</h2>
+            <ul>
+                <li><a href="css_home.html">Home</a></li>
+                <li><a href="intro_css.html">Introduction to CSS</a></li>
+                <li><a href="syntax_css.html">CSS Syntax</a></li>
+                <li><a href="selectors_css.html">CSS Selectors</a></li>
+                <li><a href="colors_css.html">CSS Colors</a></li>
+                <li><a href="backgrounds_css.html">CSS Backgrounds</a></li>
+                <li><a href="borders_css.html">CSS Borders</a></li>
+                <li><a href="margins_css.html">CSS Margins & Padding</a></li>
+                <li><a href="text_css.html">CSS Text Formatting</a></li>
+                <li><a href="fonts_css.html">CSS Fonts</a></li>
+                <li><a href="flexbox_css.html">CSS Flexbox</a></li>
+                <li><a href="grid_css.html">CSS Grid</a></li>
+                <li><a href="animations_css.html" class="active">CSS Animations</a></li>
+                <li><a href="transitions_css.html">CSS Transitions</a></li>
+                <li><a href="responsive_css.html">Responsive Design</a></li>
+                <li><a href="advanced_css.html">Advanced CSS</a></li>
+            </ul>
+        </nav>
+
+        <main class="content">
+            <h2>CSS Animations</h2>
+            <p>CSS animations allow elements to change from one style to another smoothly.</p>
+
+            <h3>Key Animation Properties</h3>
+            <ul>
+                <li><code>@keyframes</code> - Defines the animation</li>
+                <li><code>animation-name</code> - Assigns the keyframes to an element</li>
+                <li><code>animation-duration</code> - Defines how long the animation lasts</li>
+                <li><code>animation-timing-function</code> - Sets the speed curve</li>
+                <li><code>animation-delay</code> - Delays animation start</li>
+                <li><code>animation-iteration-count</code> - Repeats the animation</li>
+            </ul>
+
+            <h3>Example Animation</h3>
+            <pre>
+                <code>
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-20px);
+    }
+}
+
+.animated-box {
+    width: 100px;
+    height: 100px;
+    background-color: #007BFF;
+    color: white;
+    text-align: center;
+    line-height: 100px;
+    border-radius: 10px;
+    animation: bounce 1s infinite;
+}
+                </code>
+            </pre>
+
+            <h3>Live Demo</h3>
+            <div class="animated-box">Bounce</div>
+        </main>
+    </div>
+</body>
+</html>

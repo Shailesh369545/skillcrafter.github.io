@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Tutorial - SkillCrafters</title>
+    <link rel="stylesheet" href="javascript_style.css">
+</head>
+<body>
+    <header>
+        <h1>JavaScript Tutorial</h1>
+    </header>
+
+    <div class="container">
+        <!-- Sidebar for JavaScript Topics -->
+        <nav class="sidebar">
+            <h2>JavaScript Topics</h2>
+            <ul>
+                <li><a href="#introduction">Introduction</a></li>
+                <li><a href="#variables">Variables</a></li>
+                <li><a href="#datatypes">Data Types</a></li>
+                <li><a href="#functions">Functions</a></li>
+                <li><a href="#events">Event Handling</a></li>
+                <li><a href="#dom">DOM Manipulation</a></li>
+                <li><a href="#async">Asynchronous JavaScript</a></li>
+                <li><a href="#promises">Promises & Async/Await</a></li>
+                <li><a href="#es6">ES6 Features</a></li>
+            </ul>
+        </nav>
+
+        <!-- Main Content -->
+        <main class="content">
+            <section id="introduction">
+                <h2>Introduction to JavaScript</h2>
+                <p>JavaScript is a versatile programming language used for web development.</p>
+                <pre><code>// This is a simple JavaScript alert
+alert("Welcome to JavaScript!");</code></pre>
+            </section>
+
+            <section id="variables">
+                <h2>JavaScript Variables</h2>
+                <p>Variables store data values in JavaScript.</p>
+                <pre><code>let name = "SkillCrafters"; 
+console.log(name);</code></pre>
+            </section>
+
+            <section id="datatypes">
+                <h2>Data Types in JavaScript</h2>
+                <p>JavaScript supports different data types like strings, numbers, and objects.</p>
+                <pre><code>let age = 25; // Number
+let isStudent = true; // Boolean</code></pre>
+            </section>
+
+            <section id="functions">
+                <h2>JavaScript Functions</h2>
+                <p>Functions allow code to be reusable.</p>
+                <pre><code>function greet() {
+    return "Hello, World!";
+}
+console.log(greet());</code></pre>
+            </section>
+
+            <section id="events">
+                <h2>Event Handling</h2>
+                <p>JavaScript can handle user interactions using events.</p>
+                <pre><code>document.getElementById("btn").addEventListener("click", function() {
+    alert("Button clicked!");
+});</code></pre>
+            </section>
+
+            <section id="dom">
+                <h2>DOM Manipulation</h2>
+                <p>Modify HTML elements using JavaScript.</p>
+                <pre><code>document.getElementById("demo").innerText = "Hello, JavaScript!";</code></pre>
+            </section>
+
+            <section id="async">
+                <h2>Asynchronous JavaScript</h2>
+                <p>Asynchronous programming allows JavaScript to execute tasks without blocking the main thread.</p>
+                <pre><code>setTimeout(() => {
+    console.log("Executed after 2 seconds");
+}, 2000);</code></pre>
+            </section>
+
+            <section id="promises">
+                <h2>Promises & Async/Await</h2>
+                <p>Promises help handle asynchronous operations.</p>
+                <pre><code>function fetchData() {
+    return new Promise(resolve => {
+        setTimeout(() => resolve("Data loaded"), 2000);
+    });
+}
+
+fetchData().then(console.log);</code></pre>
+            </section>
+
+            <section id="es6">
+                <h2>ES6 Features</h2>
+                <p>ES6 introduced features like arrow functions, template literals, and let/const.</p>
+                <pre><code>const sum = (a, b) => a + b;
+console.log(sum(5, 3));</code></pre>
+            </section>
+        </main>
+    </div>
+
+    <script>
+        // Smooth scrolling for sidebar navigation
+        document.querySelectorAll('.sidebar a').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
