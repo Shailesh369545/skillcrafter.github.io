@@ -1,0 +1,88 @@
+/* Login Page Styling */
+body {
+    background: linear-gradient(to right, #4a90e2, #5a67d8);
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.login-container {
+    background: white;
+    width: 400px;
+    padding: 30px;
+    text-align: center;
+    border-radius: 12px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.login-container h1 {
+    font-size: 26px;
+    font-weight: bold;
+}
+
+.highlight {
+    background: #4a90e2;
+    color: white;
+    padding: 3px 5px;
+    border-radius: 5px;
+}
+
+.login-container h2 {
+    font-size: 22px;
+    margin-bottom: 15px;
+}
+
+/* Input Fields */
+.input-group {
+    margin-bottom: 15px;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+/* Password Toggle */
+.password-group {
+    position: relative;
+}
+
+.toggle-password {
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    cursor: pointer;
+}
+
+/* Login Button */
+.btn-primary {
+    background: #4a90e2;
+    color: white;
+    border: none;
+    padding: 12px;
+    width: 100%;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn-primary:hover {
+    background: #3a7bd5;
+}
+
+/* Links */
+.forgot-password {
+    margin-top: 10px;
+}
+
+.forgot-password a,
+.signup-text a {
+    color: #4a90e2;
+    text-decoration: none;
+}

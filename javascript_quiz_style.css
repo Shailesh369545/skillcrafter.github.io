@@ -1,0 +1,77 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+/* Header */
+header {
+    background: linear-gradient(to right, #4a90e2, #5a67d8);
+    padding: 20px;
+    text-align: center;
+    color: white;
+    font-size: 1.5rem;
+}
+
+/* Container */
+.container {
+    width: 60%;
+    margin: auto;
+    padding: 20px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    margin-top: 20px;
+}
+
+/* Questions */
+.question {
+    margin-bottom: 20px;
+}
+
+.question h3 {
+    font-size: 1.2rem;
+    color: #333;
+}
+
+label {
+    display: block;
+    padding: 5px;
+    cursor: pointer;
+    background: #ddd;
+    margin: 5px 0;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+label:hover {
+    background: #bbb;
+}
+
+/* Submit Button */
+button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background: #007BFF;
+    color: white;
+    border: none;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background: #0056b3;
+}
+
+/* Result */
+#result {
+    text-align: center;
+    font-size: 1.4rem;
+    font-weight: bold;
+    margin-top: 20px;
+}

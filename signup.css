@@ -1,0 +1,97 @@
+/* Signup Page Styling */
+body {
+    background: linear-gradient(to right, #4a90e2, #5a67d8);
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.signup-container {
+    background: white;
+    width: 400px;
+    padding: 30px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.signup-container h1 {
+    font-size: 26px;
+    font-weight: bold;
+}
+
+.highlight {
+    background: #4a90e2;
+    color: white;
+    padding: 3px 5px;
+    border-radius: 5px;
+}
+
+.signup-container h2 {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+/* Profile Picture Upload */
+.profile-pic {
+    position: relative;
+    margin: 10px auto;
+    width: 80px;
+}
+
+.profile-pic img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: 2px solid #ccc;
+    cursor: pointer;
+}
+
+#uploadText {
+    font-size: 12px;
+    color: #4a90e2;
+    cursor: pointer;
+}
+
+/* Input Fields */
+.form-group {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+}
+
+.form-group input {
+    width: 48%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+}
+
+.btn-primary {
+    background: #4a90e2;
+    color: white;
+    border: none;
+    padding: 10px;
+    width: 100%;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.btn-primary:hover {
+    background: #3a7bd5;
+}
+
+/* Login Link */
+.login-text {
+    margin-top: 10px;
+}
+
+.login-text a {
+    color: #4a90e2;
+    text-decoration: none;
+}

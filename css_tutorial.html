@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Tutorial</title>
+    <link rel="stylesheet" href="css_style.css">
+</head>
+<body>
+    <header>
+        <h1>CSS Tutorial</h1>
+    </header>
+    
+    <div class="container">
+        <!-- Sidebar -->
+        <nav class="sidebar">
+            <h2>CSS Topics</h2>
+            <ul>
+                <li><a href="#introduction">Introduction</a></li>
+                <li><a href="#selectors">CSS Selectors</a></li>
+                <li><a href="#box-model">Box Model</a></li>
+                <li><a href="#flexbox">Flexbox</a></li>
+                <li><a href="#grid">CSS Grid</a></li>
+                <li><a href="#animations">CSS Animations</a></li>
+                <li><a href="#transitions">CSS Transitions</a></li>
+                <li><a href="#responsive">Responsive Design</a></li>
+            </ul>
+        </nav>
+        
+        <!-- Main Content -->
+        <main class="content">
+            <section id="introduction">
+                <h2>Introduction to CSS</h2>
+                <p>CSS (Cascading Style Sheets) is used to style HTML elements.</p>
+                <pre><code>p { color: blue; }</code></pre>
+            </section>
+
+            <section id="selectors">
+                <h2>CSS Selectors</h2>
+                <p>Selectors target HTML elements to apply styles.</p>
+                <pre><code>h1 { text-align: center; }</code></pre>
+            </section>
+
+            <section id="box-model">
+                <h2>Box Model</h2>
+                <p>The Box Model includes margins, borders, padding, and content.</p>
+                <pre><code>div { padding: 10px; border: 1px solid black; }</code></pre>
+            </section>
+
+            <section id="flexbox">
+                <h2>Flexbox</h2>
+                <p>Flexbox helps with responsive layouts.</p>
+                <pre><code>.container { display: flex; justify-content: space-between; }</code></pre>
+            </section>
+
+            <section id="grid">
+                <h2>CSS Grid</h2>
+                <p>CSS Grid allows two-dimensional layouts.</p>
+                <pre><code>.grid { display: grid; grid-template-columns: 1fr 1fr; }</code></pre>
+            </section>
+
+            <section id="animations">
+                <h2>CSS Animations</h2>
+                <p>Animations make elements move smoothly.</p>
+                <pre><code>@keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }</code></pre>
+            </section>
+
+            <section id="transitions">
+                <h2>CSS Transitions</h2>
+                <p>Transitions animate changes smoothly.</p>
+                <pre><code>button { transition: background 0.3s ease; }</code></pre>
+            </section>
+
+            <section id="responsive">
+                <h2>Responsive Design</h2>
+                <p>Make websites adaptable to different screen sizes.</p>
+                <pre><code>@media (max-width: 600px) { body { background: lightgray; } }</code></pre>
+            </section>
+        </main>
+    </div>
+</body>
+</html>

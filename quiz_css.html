@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced CSS Quiz</title>
+    <link rel="stylesheet" href="quiz_css_style.css">
+</head>
+<body>
+    <header>
+        <h1>Advanced CSS Quiz</h1>
+    </header>
+        <main class="content">
+            <h2>Test Your CSS Skills!</h2>
+            <form id="quizForm">
+                <div class="quiz-question">
+                    <p><strong>1. What is the correct syntax for using a CSS variable?</strong></p>
+                    <label><input type="radio" name="q1" value="a"> var(--main-color);</label>
+                    <label><input type="radio" name="q1" value="b"> $main-color;</label>
+                    <label><input type="radio" name="q1" value="c"> css(main-color);</label>
+                </div>
+
+                <div class="quiz-question">
+                    <p><strong>2. Which display property enables a flexible layout?</strong></p>
+                    <label><input type="radio" name="q2" value="a"> block</label>
+                    <label><input type="radio" name="q2" value="b"> inline</label>
+                    <label><input type="radio" name="q2" value="c"> flex</label>
+                </div>
+
+                <div class="quiz-question">
+                    <p><strong>3. What does mix-blend-mode do?</strong></p>
+                    <label><input type="radio" name="q3" value="a"> Mixes colors between elements</label>
+                    <label><input type="radio" name="q3" value="b"> Blurs an image</label>
+                    <label><input type="radio" name="q3" value="c"> Changes font style</label>
+                </div>
+
+                <button type="button" onclick="calculateScore()">Submit Quiz</button>
+            </form>
+
+            <h3 id="result"></h3>
+        </main>
+    </div>
+
+    <script>
+        function calculateScore() {
+            let score = 0;
+            const answers = {
+                q1: "a",
+                q2: "c",
+                q3: "a"
+            };
+
+            for (let question in answers) {
+                const selected = document.querySelector(input[name="${question}"]:checked);
+                if (selected && selected.value === answers[question]) {
+                    score += 5;
+                }
+            }
+
+            document.getElementById("result").innerText = "Your Score: " + score + " / 15";
+        }
+    </script>
+</body>
+</html>

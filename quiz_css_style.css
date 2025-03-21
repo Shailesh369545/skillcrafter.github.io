@@ -1,0 +1,79 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+/* Header */
+header {
+    background: linear-gradient(to right, #4a90e2, #5a67d8);
+    padding: 20px;
+    text-align: center;
+    color: white;
+    font-size: 1.5rem;
+}
+    
+/* Main Content */
+.content {
+    flex: 1;
+    padding: 20px;
+    background-color: white;
+    border-left: 1px solid #ccc;
+    margin-left: 250px;
+}
+
+/* Quiz Questions */
+.quiz-question {
+    background: #fff;
+    padding: 15px;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.quiz-question p {
+    font-size: 1.1rem;
+    font-weight: bold;
+}
+
+.quiz-question label {
+    display: block;
+    margin: 5px 0;
+    padding: 8px;
+    background: #f4f4f4;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.quiz-question label:hover {
+    background: #ddd;
+}
+
+/* Submit Button */
+button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #00adb5;
+    color: white;
+    border: none;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background-color:#5a67d8;
+}
+
+/* Result Display */
+#result {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #00adb5;
+    margin-top: 15px;
+}

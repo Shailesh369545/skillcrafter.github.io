@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SkillCrafters - Sign Up</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="signup.css">
+</head>
+<body>
+
+    <!-- Signup Form -->
+    <div class="signup-container">
+        <h1>Skill <span class="highlight">Crafters</span></h1>
+        <h2>Sign Up</h2>
+
+        <!-- Profile Photo Upload -->
+        <div class="profile-pic">
+            <img src="images/default-avatar.png" id="profileImage" alt="Profile Picture">
+            <input type="file" id="uploadPhoto" accept="image/*" hidden>
+            <p id="uploadText">📷 Add Photo</p>
+        </div>
+
+        <form action="login.html" method="POST">
+            <div class="form-group">
+                <input type="text" name="first_name" placeholder="First Name" required>
+                <input type="text" name="last_name" placeholder="Last Name" required>
+            </div>
+            <div class="form-group">
+                <input type="email" name="email" placeholder="Email" required>
+                <input type="tel" name="phone" placeholder="Phone" required>
+            </div>
+            <div class="form-group">
+                <input type="password" name="password" placeholder="Create Password" required>
+                <input type="password" name="confirm_password" placeholder="Confirm Password" required>
+            </div>
+            <button type="submit" class="btn-primary">Sign Up</button>
+        </form>
+
+        <p class="login-text">Already have an account? <a href="login.html">Login</a></p>
+    </div>
+
+    <script>
+        // Image Upload
+        document.getElementById("uploadText").addEventListener("click", function() {
+            document.getElementById("uploadPhoto").click();
+        });
+
+        document.getElementById("uploadPhoto").addEventListener("change", function(event) {
+            const file = event.target.files[0];
+            if (file) {
+                const reader = new FileReader();
+                reader.onload = function(e) {
+                    document.getElementById("profileImage").src = e.target.result;
+                };
+                reader.readAsDataURL(file);
+            }
+        });
+    </script>
+
+</body>
+</html>

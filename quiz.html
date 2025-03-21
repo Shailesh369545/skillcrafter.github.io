@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Quiz - SkillCrafters</title>
+    <link rel="stylesheet" href="quiz_style.css">
+    <script>
+        function checkAnswers() {
+            let score = 0;
+            let totalQuestions = 3;
+
+            let q1 = document.querySelector('input[name="q1"]:checked').value;
+            let q2 = document.querySelector('input[name="q2"]:checked').value;
+            let q3 = document.querySelector('input[name="q3"]:checked').value;
+
+            if (q1 === "b") score++;
+            if (q2 === "c") score++;
+            if (q3 === "a") score++;
+
+            alert("You scored " + score + " out of " + totalQuestions);
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <h1>HTML Quiz</h1>
+    </header>
+
+  
+
+        <main class="content">
+            <h2>Test Your HTML Knowledge</h2>
+
+            <form id="quizForm">
+                <p>1. What does HTML stand for?</p>
+                <input type="radio" name="q1" value="a"> HighText Machine Language<br>
+                <input type="radio" name="q1" value="b"> HyperText Markup Language<br>
+                <input type="radio" name="q1" value="c"> HyperText Modern Language<br>
+
+                <p>2. Which tag is used for the largest heading?</p>
+                <input type="radio" name="q2" value="a"> &lt;h6&gt;<br>
+                <input type="radio" name="q2" value="b"> &lt;h4&gt;<br>
+                <input type="radio" name="q2" value="c"> &lt;h1&gt;<br>
+
+                <p>3. Which tag is used to create a hyperlink?</p>
+                <input type="radio" name="q3" value="a"> &lt;a&gt;<br>
+                <input type="radio" name="q3" value="b"> &lt;link&gt;<br>
+                <input type="radio" name="q3" value="c"> &lt;url&gt;<br>
+
+                <br>
+                <button type="button" onclick="checkAnswers()">Submit Quiz</button>
+            </form>
+        </main>
+    </div>
+</body>
+</html>
